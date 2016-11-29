@@ -1,0 +1,573 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-13 18:02:35.4606724 UTC
+
+interface main@main:Lab02 7103
+  interface hash: 2d37be27dcf33a3011dffb7ee59c7fab
+  ABI hash: 273c1cf8620646fe34f65757f0ecc820
+  export-list hash: 0eebfb81bc80192cd80f9c8413b8d060
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fbe72dce7169ea56d81ede094b67e0dc
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lab02._p1000
+  Lab02._p3
+  Lab02._p9
+  Lab02._run_profile
+  Lab02._s
+  Lab02._s0
+  Lab02._s1
+  Lab02._s2
+  Lab02._s3
+  Lab02._s4
+  Lab02._s5
+  Lab02._s6
+  Lab02._s7
+  Lab02._s8
+  Lab02._s9
+  Lab02._ss
+  Lab02.distance
+  Lab02.findFastest
+  Lab02.getMeasured
+  Lab02.getPaths
+  Lab02.maxSpeed
+  Lab02.maxTail
+  Lab02.pathDistance
+  Lab02.pathInvariant
+  Lab02.pathPace
+  Lab02.pathSpeed
+  Lab02.pathTime
+  Lab02.segmentId
+  Lab02.segmentInvariant
+  Lab02.thisIsLab02
+  Lab02.time
+  Lab02.Distance
+  Lab02.Pace
+  Lab02.SegPath
+  Lab02.Segment
+  Lab02.SegmentId
+  Lab02.Speed
+  Lab02.Time
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 906b37a40029a8b67c803fa4b303a827
+7c9ae04de52a821cb5d2f307cc77a03d
+  $w_s ::
+    GHC.Integer.Type.Integer
+    -> (# Lab02.SegmentId, Lab02.Distance, Lab02.Time #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ w :: GHC.Integer.Type.Integer ->
+                 (# GHC.CString.unpackAppendCString#
+                      "_s"#
+                      (case GHC.Show.$w$cshowsPrec1
+                              0
+                              w
+                              (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                       GHC.Types.: @ GHC.Types.Char ww3 ww4 }),
+                    GHC.Integer.Type.plusInteger
+                      Lab02._s12
+                      (GHC.Integer.Type.timesInteger w (GHC.Real.^_$s^ Lab02._s11 w)),
+                    GHC.Integer.Type.plusInteger
+                      Lab02._p14
+                      (GHC.Integer.Type.timesInteger Lab02._p11 w) #)) -}
+e6a29cf5914c95a2cc7082d54cdc518d
+  $w_ss ::
+    GHC.Integer.Type.Integer
+    -> (# Lab02.SegmentId, Lab02.Distance, Lab02.Time #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ w :: GHC.Integer.Type.Integer ->
+                 (# GHC.CString.unpackAppendCString#
+                      "_ss"#
+                      (case GHC.Show.$w$cshowsPrec1
+                              0
+                              w
+                              (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                       GHC.Types.: @ GHC.Types.Char ww3 ww4 }),
+                    GHC.Integer.Type.plusInteger
+                      Lab02._ss1
+                      (GHC.Integer.Type.modInteger w Lab02._p11),
+                    GHC.Integer.Type.plusInteger
+                      (Lab02._run_profile_$s_run_profile w)
+                      (GHC.Integer.Type.modInteger w Lab02._run_profile3) #)) -}
+1660919707f38f61415e74d3a5521814
+  $wmaxTail ::
+    Lab02.SegPath
+    -> Lab02.Speed
+    -> [(Lab02.SegPath, Lab02.Speed)]
+    -> (# Lab02.SegPath, Lab02.Speed #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U(U)><S,1*U>,
+     Inline: [0] -}
+f10533bd2a9f9d075b2af303d054cb5c
+  $wpathPace :: Lab02.SegPath -> GHC.Prim.Double#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ w :: Lab02.SegPath ->
+                 case GHC.Integer.Type.doubleFromInteger
+                        (Lab02.pathTime w) of wild { DEFAULT ->
+                 case GHC.Integer.Type.doubleFromInteger
+                        (Lab02.pathDistance w) of wild1 { DEFAULT ->
+                 GHC.Prim./##
+                   (GHC.Prim.*## 100.0 wild)
+                   (GHC.Prim.*## 6.0 wild1) } }) -}
+e54eec414be2811662c18516cb3760ad
+  $wpathSpeed :: Lab02.SegPath -> GHC.Prim.Double#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ w :: Lab02.SegPath ->
+                 case GHC.Integer.Type.doubleFromInteger
+                        (Lab02.pathDistance w) of wild { DEFAULT ->
+                 case GHC.Integer.Type.doubleFromInteger
+                        (Lab02.pathTime w) of wild1 { DEFAULT ->
+                 GHC.Prim./## (GHC.Prim.*## 3.6 wild) wild1 } }) -}
+24efe2ad8f85e5a009c4e02364322858
+  $wsegmentInvariant ::
+    Lab02.Distance -> Lab02.Time -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: Lab02.Distance ww1 :: Lab02.Time ->
+                 case GHC.Integer.Type.gtInteger# ww Lab02._p1 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Integer.Type.gtInteger#
+                             ww1
+                             Lab02._p1 of wild2 { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 } } }) -}
+616e687252b62fdb21abb4960e4fd814
+  type Distance = GHC.Integer.Type.Integer
+c95e9df39c9952781a73defb76a02852
+  type Pace = GHC.Types.Double
+fe90f09cf5419a1181fe36c66de85fab
+  type SegPath = [Lab02.Segment]
+41ceb0ed6efb5139547d32dc3f14e298
+  type Segment = (Lab02.SegmentId, Lab02.Distance, Lab02.Time)
+20a285b638b10eee59e9a5d4edb7781d
+  type SegmentId = GHC.Base.String
+133664b75ed45cf2e7d6305d7dc86025
+  type Speed = GHC.Types.Double
+c6645e61833fe0081d79b8ee2227ab3d
+  type Time = GHC.Integer.Type.Integer
+fdbbcc6741b3be11df2d90dd2384e91e
+  _p1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+821ffca2f01b52a4abc293fc2536c6cf
+  _p10 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Lab02._p12, Lab02._p7, Lab02._p11)) -}
+c924fab40a821e698058cf70ceb1811b
+  _p1000 :: [Lab02.Segment]
+  {- Unfolding: (Lab02._p1000_go Lab02._p1) -}
+17c9cd2d47ab56b69b2abc684e0b1304
+  _p1000_go ::
+    GHC.Integer.Type.Integer
+    -> [(Lab02.SegmentId, Lab02.Distance, Lab02.Time)]
+  {- Arity: 1, Strictness: <S,U> -}
+6519c21fc838d55f805b35b044500818
+  _p11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 5) -}
+03864ea0e7fddc17035bdb590b5ea593
+  _p12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_2"#) -}
+f5defad566d643aa1adc9eeaf6ebea02
+  _p13 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Lab02._p15, Lab02._p7, Lab02._p14)) -}
+1fc9448720580cbee0890dcc6f7d2576
+  _p14 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 10) -}
+69b1cd1c0ae7e09cac5230ca5b7c9f6e
+  _p15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_1"#) -}
+5d7aedb9831ed99e84b07ee23ea569f2
+  _p16 ::
+    ([Lab02.Segment],
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment,
+     Lab02.Segment)
+  {- Unfolding: (case Lab02._p9_go Lab02._p1 of wild {
+                   [] -> Lab02._p17 GHC.Prim.void#
+                   : _s13 ds
+                   -> case ds of wild1 {
+                        [] -> Lab02._p17 GHC.Prim.void#
+                        : _s14 ds1
+                        -> case ds1 of wild2 {
+                             [] -> Lab02._p17 GHC.Prim.void#
+                             : _s15 ds2
+                             -> case ds2 of wild3 {
+                                  [] -> Lab02._p17 GHC.Prim.void#
+                                  : _s16 ds3
+                                  -> case ds3 of wild4 {
+                                       [] -> Lab02._p17 GHC.Prim.void#
+                                       : _s17 ds4
+                                       -> case ds4 of wild5 {
+                                            [] -> Lab02._p17 GHC.Prim.void#
+                                            : _s18 ds5
+                                            -> case ds5 of wild6 {
+                                                 [] -> Lab02._p17 GHC.Prim.void#
+                                                 : _s19 ds6
+                                                 -> case ds6 of wild7 {
+                                                      [] -> Lab02._p17 GHC.Prim.void#
+                                                      : _s20 ds7
+                                                      -> case ds7 of wild8 {
+                                                           [] -> Lab02._p17 GHC.Prim.void#
+                                                           : _s21 ds8
+                                                           -> case ds8 of wild9 {
+                                                                [] -> Lab02._p17 GHC.Prim.void#
+                                                                : _s22 ds9
+                                                                -> case ds9 of wild10 {
+                                                                     []
+                                                                     -> (wild,
+                                                                         _s13,
+                                                                         _s14,
+                                                                         _s15,
+                                                                         _s16,
+                                                                         _s17,
+                                                                         _s18,
+                                                                         _s19,
+                                                                         _s20,
+                                                                         _s21,
+                                                                         _s22)
+                                                                     : ipv ipv1
+                                                                     -> Lab02._p17
+                                                                          GHC.Prim.void# } } } } } } } } } } }) -}
+fef73d8396c0d5caf80e51c04492b678
+  _p17 ::
+    GHC.Prim.Void#
+    -> ([Lab02.Segment],
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment,
+        Lab02.Segment)
+  {- Arity: 1, Strictness: <B,A>b -}
+89e83af1df5912ac84c933f04340c32e
+  _p2 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer,
+      GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer,
+                      GHC.Integer.Type.Integer)
+                   Lab02._p10
+                   Lab02._p4) -}
+fce9525538cd03b11668332299ca47a5
+  _p3 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer,
+      GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer,
+                      GHC.Integer.Type.Integer)
+                   Lab02._p13
+                   Lab02._p2) -}
+154a9bbf477604e5f264b3a3f66d88c1
+  _p4 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer,
+      GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer,
+                      GHC.Integer.Type.Integer)
+                   Lab02._p5
+                   (GHC.Types.[]
+                      @ ([GHC.Types.Char],
+                         GHC.Integer.Type.Integer,
+                         GHC.Integer.Type.Integer))) -}
+962f61086530751e21776afc43eedf83
+  _p5 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer)
+  {- Strictness: m, Unfolding: ((Lab02._p8, Lab02._p7, Lab02._p6)) -}
+bc1be9bd23ebbca8aa6862188ccfa6f9
+  _p6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 7) -}
+22b27a5c9c0031633f8422605104ae17
+  _p7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 2) -}
+cdbe5c2a1c883824a8be0a17f3912c25
+  _p8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_3"#) -}
+cfe4cd1f34b87b0e68b013f70fb7d307
+  _p9 :: [Lab02.Segment]
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _p18 }) -}
+2525a95d7ce1d4cbb373885d9d60fe3a
+  _p9_go ::
+    GHC.Integer.Type.Integer
+    -> [(Lab02.SegmentId, Lab02.Distance, Lab02.Time)]
+  {- Arity: 1, Strictness: <S,U> -}
+9d64ce8fbacd6c7913aa1eb2389d832f
+  _run_profile :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(1*U,A,A,A,1*C1(C1(U)),A,A,A,A)><L,U> -}
+74ded2ae7680b3b9238a3c52cd928a0a
+  _run_profile1 :: Lab02.Time
+  {- HasNoCafRefs, Unfolding: (__integer 4) -}
+4c4ed03cf5d94c0262e212eadda9d0bb
+  _run_profile2 :: Lab02.Time
+  {- HasNoCafRefs, Unfolding: (__integer 6) -}
+14045aa58fd0e8c4f4f62c436d62cdb2
+  _run_profile3 :: Lab02.Time
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+b19dd061780cb3671cd934ecca73e6de
+  _run_profile4 :: Lab02.Time
+  {- HasNoCafRefs, Unfolding: (__integer 20) -}
+4716668db2614d87a5663936f782e897
+  _run_profile5 :: Lab02.Time
+  {- HasNoCafRefs, Unfolding: (__integer 15) -}
+c49056fe6a87f7a3c80cafb433748e17
+  _run_profile_$s_run_profile :: Lab02.Time -> Lab02.Time
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ eta :: Lab02.Time ->
+                 case GHC.Integer.Type.leInteger#
+                        eta
+                        Lab02._p14 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Integer.Type.leInteger#
+                             eta
+                             Lab02._run_profile5 of wild2 { DEFAULT ->
+                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                        GHC.Types.False
+                        -> case GHC.Integer.Type.leInteger#
+                                  eta
+                                  Lab02._run_profile4 of wild4 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild5 {
+                             GHC.Types.False
+                             -> GHC.Integer.Type.plusInteger
+                                  Lab02._run_profile3
+                                  (GHC.Integer.Type.divInteger
+                                     (GHC.Integer.Type.minusInteger eta Lab02._run_profile4)
+                                     Lab02._p14)
+                             GHC.Types.True -> Lab02._run_profile3 } }
+                        GHC.Types.True -> Lab02._p7 } }
+                   GHC.Types.True
+                   -> GHC.Integer.Type.minusInteger
+                        Lab02._run_profile2
+                        (GHC.Integer.Type.divInteger
+                           (GHC.Integer.Type.timesInteger Lab02._run_profile1 eta)
+                           Lab02._p14) } }) -}
+3fac6e5f908ad9c5d93aed0403c2b81a
+  _s :: GHC.Integer.Type.Integer -> Lab02.Segment
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Integer.Type.Integer ->
+                 case Lab02.$w_s w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+b779bff7e85e1d35e832358b71553c92
+  _s0 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s13 }) -}
+ce24e0279006053567b11e8c0997d4cd
+  _s1 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s14 }) -}
+d57dee456ed121f130fe516657b98bbc
+  _s11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer -1) -}
+ae2ee0ae87a232760ee192b2c687c99a
+  _s12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 100) -}
+5854b9242c13eb3032ca80cbf513120f
+  _s2 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s15 }) -}
+8252e2377abce88b8dcfe1343b7fc0c4
+  _s3 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s16 }) -}
+707c1701811c132f3ba7e53751c861b6
+  _s4 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s17 }) -}
+ee0dd42045e256fc287050709af5b52c
+  _s5 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s18 }) -}
+e0f25759a8d4cd9892be5b8f1e8c814e
+  _s6 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s19 }) -}
+1b7ae64e259591b0b1878f103c85e328
+  _s7 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s20 }) -}
+a4ff9f6c48cc6c0aa6e252ccb0942b5e
+  _s8 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s21 }) -}
+302978a4222ca6a4ecfa504d084fdde4
+  _s9 :: Lab02.Segment
+  {- Unfolding: (case Lab02._p16 of ds { (,,,,,,,,,,) _p18 _s13 _s14 _s15 _s16 _s17 _s18 _s19 _s20 _s21 _s22 ->
+                 _s22 }) -}
+619e5b5190accdfb87a558a96b0fccd3
+  _ss :: GHC.Integer.Type.Integer -> Lab02.Segment
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Integer.Type.Integer ->
+                 case Lab02.$w_ss w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+205dc537ed1fa04debe6061ffd6d9b6d
+  _ss1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 8) -}
+640248b8acd4de326afb03b73967469a
+  distance :: Lab02.Segment -> Lab02.Distance
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (Lab02.SegmentId, Lab02.Distance, Lab02.Time) ->
+                 case ds of wild { (,,) ds1 d ds2 -> d }) -}
+005368c77a1ec5192d07634b1397822f
+  findFastest ::
+    Lab02.Distance
+    -> Lab02.SegPath -> GHC.Base.Maybe (Lab02.SegPath, Lab02.Speed)
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ rqdDist :: Lab02.Distance ds :: [Lab02.Segment] ->
+                 case ds of wild {
+                   [] -> GHC.Base.Nothing @ (Lab02.SegPath, Lab02.Speed)
+                   : ipv ipv1
+                   -> case GHC.Integer.Type.gtInteger#
+                             rqdDist
+                             (Lab02.pathDistance
+                                (Lab02.getMeasured rqdDist wild)) of wild1 { DEFAULT ->
+                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.Just
+                             @ (Lab02.SegPath, Lab02.Speed)
+                             (case Lab02.getPaths rqdDist wild of wild3 {
+                                [] -> Lab02.findFastest1 : x xs -> Lab02.maxTail x xs })
+                        GHC.Types.True
+                        -> GHC.Base.Nothing @ (Lab02.SegPath, Lab02.Speed) } } }) -}
+e7e75d7c4795b6c646171594e4ef69d7
+  findFastest1 :: (Lab02.SegPath, Lab02.Speed)
+  {- Strictness: b -}
+0ac4a69c4e110917ced16673bbf5f52f
+  getMeasured :: Lab02.Distance -> Lab02.SegPath -> Lab02.SegPath
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+41010de412d53975e2197427e4c5d237
+  getPaths ::
+    Lab02.Distance -> Lab02.SegPath -> [(Lab02.SegPath, Lab02.Speed)]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+3a3ffe9505b305c045367993cfa6b711
+  maxSpeed ::
+    [(Lab02.SegPath, Lab02.Speed)] -> (Lab02.SegPath, Lab02.Speed)
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: [(Lab02.SegPath, Lab02.Speed)] ->
+                 case ds of wild {
+                   [] -> Lab02.findFastest1 : x xs -> Lab02.maxTail x xs }) -}
+305a1795810319fd1a1b4200155cafaa
+  maxTail ::
+    (Lab02.SegPath, Lab02.Speed)
+    -> [(Lab02.SegPath, Lab02.Speed)] -> (Lab02.SegPath, Lab02.Speed)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U,U(U))><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (Lab02.SegPath, Lab02.Speed)
+                   w1 :: [(Lab02.SegPath, Lab02.Speed)] ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case Lab02.$wmaxTail ww1 ww2 w1 of ww3 { (#,#) ww4 ww5 ->
+                 (ww4, ww5) } }) -}
+cf5c0668b7a067986a08237b9ed1997e
+  pathDistance :: Lab02.SegPath -> Lab02.Distance
+  {- Arity: 1, Strictness: <S,1*U> -}
+d9239231a71b3a67abe4b1a7c0514625
+  pathInvariant :: Lab02.SegPath -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ ds :: [Lab02.Segment] ->
+                 case ds of wild {
+                   [] -> GHC.Types.False
+                   : ipv ipv1
+                   -> (Lab02.pathInvariant_go wild)
+                        `cast`
+                      (Data.Monoid.NTCo:All[0]) }) -}
+68b9839f00240cf472e62a8b6b2b3a2f
+  pathInvariant_go :: [Lab02.Segment] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+71ae420af3232078f644f56ae22e496a
+  pathPace :: Lab02.SegPath -> Lab02.Pace
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Lab02.SegPath ->
+                 case Lab02.$wpathPace w of ww { DEFAULT -> GHC.Types.D# ww }) -}
+44c24f3426e6ca376ebf376d425f02f5
+  pathSpeed :: Lab02.SegPath -> Lab02.Speed
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Lab02.SegPath ->
+                 case Lab02.$wpathSpeed w of ww { DEFAULT -> GHC.Types.D# ww }) -}
+88d11b47275ab066cd25172244c9a3a4
+  pathTime :: Lab02.SegPath -> Lab02.Time
+  {- Arity: 1, Strictness: <S,1*U> -}
+cb138a51ea145ef9bfcd09c31dbafb81
+  segmentId :: Lab02.Segment -> Lab02.SegmentId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (Lab02.SegmentId, Lab02.Distance, Lab02.Time) ->
+                 case ds of wild { (,,) s ds1 ds2 -> s }) -}
+ecb887d67bdc431f8a06e1ad35412aa5
+  segmentInvariant :: Lab02.Segment -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Lab02.Segment ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 Lab02.$wsegmentInvariant ww2 ww3 }) -}
+7fb929bda420ca449bdc136c93e18128
+  thisIsLab02 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "This is Lab 2"#) -}
+c23678165120bab84857fbae9644e87a
+  time :: Lab02.Segment -> Lab02.Time
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (Lab02.SegmentId, Lab02.Distance, Lab02.Time) ->
+                 case ds of wild { (,,) ds1 ds2 t -> t }) -}
+"SPEC _run_profile @ Time" [ALWAYS] forall $dIntegral :: GHC.Real.Integral
+                                                           Lab02.Time
+  Lab02._run_profile @ GHC.Integer.Type.Integer $dIntegral
+  = Lab02._run_profile_$s_run_profile
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
