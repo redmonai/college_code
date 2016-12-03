@@ -1,0 +1,182 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-22 15:40:14.2356836 UTC
+
+interface main@main:Lab01 7103
+  interface hash: fcf1243ce9baf06842221a1c44a087ab
+  ABI hash: 23568ee6412c9e13c494c422d9a80695
+  export-list hash: f027283c0d7d58d0a2b20993f26636cd
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3e4776586d2ee4bfad872edb8225780f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lab01._c01
+  Lab01._c02
+  Lab01._c03
+  Lab01._c04
+  Lab01._c05
+  Lab01._c06
+  Lab01._c07
+  Lab01._c08
+  Lab01._c09
+  Lab01._c10
+  Lab01._path0
+  Lab01._path1
+  Lab01._path2
+  Lab01._path3
+  Lab01._path4
+  Lab01._path5
+  Lab01.distance
+  Lab01.pathlength
+  Lab01.sqr
+  Lab01.thisIsLab01
+  Lab01.Coord
+  Lab01.Distance
+  Lab01.Path
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Float e532d434ec2447d809887c0fca1d78a5
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+3d8d55dd46334f025cb6bfd53bed6684
+  $wpathlength :: Lab01.Path -> GHC.Prim.Double#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+f6a354151684e11fbe9994ac1b00e0f8
+  type Coord = (GHC.Types.Double, GHC.Types.Double)
+d9919bd86ecd71cc363a03283243a7d3
+  type Distance = GHC.Types.Double
+25d7ca9166445208fac53b6e3c16bf92
+  type Path = [Lab01.Coord]
+43d2f09c3c5da287611afc2a07c7dd3a
+  _c01 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c1, Lab01._c1)) -}
+ab90d6ca2ed8bcad99bce6e67ffd7d9b
+  _c02 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c1, Lab01._c2)) -}
+ed6a7923195565f864f0f0c6639fd772
+  _c03 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c2, Lab01._c1)) -}
+ae2272680c5bca40797e661be5012f8d
+  _c04 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c2, Lab01._c2)) -}
+fb337395fcd11cc7a08e82d23039b33f
+  _c05 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c3, Lab01._c1)) -}
+1df3af0975a4565caea3ca9e5df39cee
+  _c06 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c1, Lab01._c3)) -}
+531d4238e9f2b4b3fc40851329e86f45
+  _c07 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c3, Lab01._c3)) -}
+86c9cc6fff26a956264f3d2d7e5a34b7
+  _c08 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c4, Lab01._c1)) -}
+c22e358cafee56de7bc54540c9313144
+  _c09 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c1, Lab01._c4)) -}
+20220a299672d92a4f1dba4fa60e45c1
+  _c1 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0) -}
+cf8bb4ad178cc9cd010c0144130b3236
+  _c10 :: Lab01.Coord
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lab01._c4, Lab01._c4)) -}
+60b8893df4179a01eb7c59e685502ca4
+  _c2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0) -}
+71dca00c1dfd84e6f3d94e910460de17
+  _c3 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 2.0) -}
+db37e1913fcdbbd814248912122828a2
+  _c4 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 3.0) -}
+0f4b6fc8bf558b1168ef3f7fe2ed4e3e
+  _path0 :: [t]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) GHC.Types.[] -}
+7e046cedfd2bd75c6d47dd8070e84a3e
+  _path1 :: [Lab01.Coord]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lab01.Coord
+                   Lab01._c06
+                   (GHC.Types.[] @ Lab01.Coord)) -}
+d71c8dfe70d7a18612dcda6ee0640873
+  _path2 :: [Lab01.Coord]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.: @ Lab01.Coord Lab01._c01 Lab01._path1) -}
+633a90f219d0f489ca10d57958d706ec
+  _path3 :: [Lab01.Coord]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.: @ Lab01.Coord Lab01._c10 Lab01._path2) -}
+b15876350a8ab5ee5d9173cdb5bedaa3
+  _path4 :: [Lab01.Coord]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.: @ Lab01.Coord Lab01._c08 Lab01._path3) -}
+6096ecfde99417b6d8341e1f10761d7d
+  _path5 :: [Lab01.Coord]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.: @ Lab01.Coord Lab01._c02 Lab01._path4) -}
+83ebd891fd937ebf7774a7684189042b
+  distance :: Lab01.Coord -> Lab01.Coord -> Lab01.Distance
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(1*U(U),1*U(U))><S(SS),1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ ds :: (GHC.Types.Double, GHC.Types.Double)
+                   ds1 :: (GHC.Types.Double, GHC.Types.Double) ->
+                 case ds of wild { (,) x1 y1 ->
+                 case ds1 of wild1 { (,) x2 y2 ->
+                 case x2 of wild2 { GHC.Types.D# x ->
+                 case x1 of wild3 { GHC.Types.D# y ->
+                 case y2 of wild4 { GHC.Types.D# x4 ->
+                 case y1 of wild5 { GHC.Types.D# y4 ->
+                 let {
+                   x5 :: GHC.Prim.Double# = GHC.Prim.-## x4 y4
+                 } in
+                 let {
+                   x6 :: GHC.Prim.Double# = GHC.Prim.-## x y
+                 } in
+                 GHC.Types.D#
+                   (GHC.Prim.sqrtDouble#
+                      (GHC.Prim.+##
+                         (GHC.Prim.*## x6 x6)
+                         (GHC.Prim.*## x5 x5))) } } } } } }) -}
+d4f0342aa5cdf566b1079ff90ccb37d9
+  pathlength :: Lab01.Path -> Lab01.Distance
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Lab01.Path ->
+                 case Lab01.$wpathlength w of ww { DEFAULT -> GHC.Types.D# ww }) -}
+79466a22ca354b2dccc57ca65c48a55c
+  sqr :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ d :: GHC.Types.Double -> GHC.Float.timesDouble d d) -}
+c38fc4dc677172787315b17cf1b1b24a
+  thisIsLab01 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "This is Lab 1"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
